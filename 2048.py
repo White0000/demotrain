@@ -168,7 +168,7 @@ def show_scoreboard():
         score_text = FONT.render(f"{i}. {entry['score']}", True, TEXT_COLOR)
         screen.blit(score_text, (WINDOW_SIZE // 2 - score_text.get_width() // 2, 100 + i * 40))
     pygame.display.flip()
-    pygame.time.wait(10000)  # 暂停3秒显示排行榜
+    pygame.time.wait(10000)  # 暂停显示排行榜
 
 # 主游戏循环
 def main():
